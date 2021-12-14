@@ -139,6 +139,10 @@ main {
   top: 46.1rem;
 }
 
+.btn--hold:disabled {
+  background-color: grey;
+}
+
 .btn:active {
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
@@ -164,4 +168,8 @@ main {
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;
+}
+
+.hidden {
+  display: none;
 }
