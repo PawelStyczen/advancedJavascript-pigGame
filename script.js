@@ -119,5 +119,8 @@ btnNew.addEventListener('click', function () {
   scoresDom['currentScore0dom'].textContent = scores['currentScore0'];
   scoresDom['currentScore0dom'].textContent = scores['currentScore1'];
 
-  switchPlayer();
+  //reset active player
+  scoresDom[`player${activePlayer}dom`].classList.remove('player--active');
+  activePlayer = 0;
+  scoresDom[`player${activePlayer}dom`].classList.add('player--active');
 });
